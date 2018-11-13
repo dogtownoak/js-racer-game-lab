@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
 #container {
-	background-image: url(../imgs/RBa2EX.png);
 	height: 100vh;
-	background-position: center;
+	background-position: center bottom;
 	background-size: cover;
-	font-family: 'Bangers', cursive;
+	font-family: 'Press Start 2P', cursive;
+	background-image: url(./imgs/8bit_pacman_wallpaper_by_dakirby309-d4vg1rw.jpg);
+}
+body {
+    margin: 0;
 }
 
 header {
@@ -11,6 +16,7 @@ header {
 }
 
 h1 {
+    color: yellow;
 	font-size: 90px;
 	margin: 0;
 	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
@@ -24,17 +30,16 @@ p {
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-#homer-instructions {
+#red-instructions {
 	float: left;
 }
 
-#peter-instructions {
+#blue-instructions {
 	float: right;
 }
 
 input {
 	padding: 10px;
-	margin: 0 5px;
 	border-radius: 5px;
 	background-color: white;
 	font-size: 20px;
@@ -52,32 +57,48 @@ img {
 	position: relative;
 
 }
-#peter {
-	position: relative;
-	left: 0px;
-	top: 15px;
-	width: 170px;
-	//padding-left: 48px;
+#red {
+    position: relative;
+	left: 10px;
+	top: 140px;
+    width: 130px;
+    filter: drop-shadow(10px 5px 4px #000000);
+    display: none;
 }
 
-#homer {
+#blue {
 	position: relative;
-	left: 0px;
-	top: -150px;
-	width: 170px;
+    left: 0px;
+    top: 140px;
+    width: 130px;
+    filter: drop-shadow(10px 5px 4px #000000);
+    display: none;
 }
 
-#chicken {
-	position: relative;
-	width: 100px;
-	left: 0px;
-	top: -75px;
-}
 
-#dinner {
+#win {
 	position: absolute;
 	width: 400px;
 	top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.button.button-primary {
+    background-color: rgb(220, 245, 1) !important;
+    color: rgb(0, 0, 0) !important;
+    border-color: rgb(0, 0, 0) !important;
+    height: 12vh;
+    width: 35vh;
+    font-size: 4em;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 1em;
+}
+
+.visable {
+    display: block !important;
+}
+
+.playing{
+	background-image: url(./imgs/packmanWallpaper.jpg) !important;
 }
